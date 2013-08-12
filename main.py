@@ -81,7 +81,6 @@ class GetStation(MainHandler):
 
     def get_user_geos(self):
         ip = self.request.remote_addr
-        ip = '24.90.246.78'
         url = URL + ip
         json_ = get_json(url)
         lat, lon = get_lat_lon(json_, 'lat', 'lon')
